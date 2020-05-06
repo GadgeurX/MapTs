@@ -19,12 +19,6 @@ and the **iOS client** with [Xcode](https://developer.apple.com/xcode/).
 
 -------
 
-<p align="center">
-  <a href="https://github.com/pink-room/kotlin-multiplatform-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/pink-room/kotlin-multiplatform-template.svg">
-  </a>
-</p>
-
 ## Info
 As opposed to
 other cross-platform approaches, Kotlin **doesn't want you to write your code once** and **compile**
@@ -83,7 +77,7 @@ Currently the ios client is not implemented due to my lack of competence
 ## Web
 
 <h3 align="center">
-  <img src="web_screen.png" alt="Web Screen" />
+  <img src="Web_screen.png" alt="Web Screen" />
 </h3>
 
 Currently, we are only using **Kotlin/JS** in order to manipulate the DOM. Some part are also write in Vue.Js for testing purpose.
