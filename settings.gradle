@@ -4,4 +4,3 @@ include 'common', 'common-jvm', 'common-js', 'common-ios',
         'common-client', 'common-client-jvm', 'common-client-js', 'common-client-ios',
         'android', 'android:mobile', 'web', 'backend'
 
-enableFeaturePreview('GRADLE_METADATA')

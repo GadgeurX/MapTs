@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.2.51'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.50'
 }
 
 group 'co.pinkroom.multiplatformtemplate'
@@ -7,7 +7,7 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'application'
 
-mainClassName = 'co.pinkroom.multiplatformtemplate.MainKt'
+mainClassName = 'com.rcorp.mapts.MainKt'
 
 repositories {
     mavenCentral()
@@ -18,9 +18,15 @@ repositories {
 dependencies {
     compile project(':common-jvm')
     compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
-    compile 'io.ktor:ktor-server-netty:0.9.3'
-    compile 'io.ktor:ktor-gson:0.9.3'
+    compile 'io.ktor:ktor-server-netty:1.3.1'
+    compile 'io.ktor:ktor-gson:1.3.1'
     compile 'ch.qos.logback:logback-classic:1.2.3'
+  
+
+    compile("org.jetbrains.exposed:exposed-core:0.22.1")
+    compile("org.jetbrains.exposed:exposed-dao:0.22.1")
+    compile("org.jetbrains.exposed:exposed-jdbc:0.22.1")
+    compile("org.postgresql:postgresql:42.2.2")
 }
 
 compileKotlin {

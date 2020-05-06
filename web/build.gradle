@@ -1,15 +1,17 @@
-group 'co.pinkroom.multiplatformtemplate'
+group 'com.rcorp.mapts'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'org.jetbrains.kotlin.frontend'
 apply plugin: 'kotlin2js'
+apply plugin: 'kotlinx-serialization'
 
 dependencies {
     compile project(':common-client-js')
 
     compile 'org.jetbrains.kotlin:kotlin-stdlib-js'
-
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime-js:$serialization_version"
     testCompile 'org.jetbrains.kotlin:kotlin-test-js'
+    implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.7.1")
 }
 
 compileKotlin2Js {
